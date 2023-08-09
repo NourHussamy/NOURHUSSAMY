@@ -448,6 +448,15 @@ img {
   display: flex;
   justify-content: center;
 }
+
+/* Show More Button Styles */
+.about__hidden {
+  display: none;
+}
+
+.about__show-more {
+  display: block;
+}
 /*==================== SKILLS ====================*/
 .skills__container{
   row-gap: 0;
