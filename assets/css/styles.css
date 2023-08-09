@@ -417,6 +417,8 @@ img {
 
 .about__description{
   text-align: justify;
+  justify-self: center;
+  align-self: center;
   margin-bottom: var(--mb-2-5);
 }
 
