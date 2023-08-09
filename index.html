@@ -183,6 +183,24 @@
                                 Show More<i class="uil uil-angle-down button__icon"></i>
                             </button>
 
+                            <div class="about__more">
+                                <p class="about__description about__hidden">In my role at Kiewit, I'm involved in developing intricate work plans and schedules for a range of operations. A notable accomplishment was being part of a team that delivered a complex multi-million dollar operation, ahead of schedule and under budget. This environment continually refines my leadership abilities, as it instills the importance of teamwork, strategic planning, and effective communication. In the midst of high-pressure situations, it's honed my ability to maintain composure, make critical decisions, and promote a culture of safety and quality.
+
+                                    Alongside my primary focus on civil engineering at York University, I've broadened my educational scope with a multidisciplinary study in design, business, law, and innovation. This diverse approach grants me a comprehensive perspective of the nuanced intersection between technology, business, and law within the engineering field. 
+                                    
+                                    Embracing this era of technology and digital evolution, I am actively honing my skills in computer science and web programming, reinforcing my commitment to continuous learning and integration of technology in civil engineering.
+                                    
+                                    My academic journey does not end here. As my passion for the legal field grows, I plan to study law post-graduation, envisioning a career that combines the disciplines of engineering and law. This ambition excites me as I anticipate a profession that challenges, fulfills, and makes the most of my dual expertise.
+                                    
+                                    As my graduation approaches, I feel prepared to confront the challenges and opportunities that lie ahead. My unique blend of technical proficiency, leadership acumen, dedication to innovation, and continuous learning ethos shapes me into a well-rounded aspiring professional. I look forward to making a meaningful contribution to the engineering and legal fields while bringing a unique perspective to my future roles.</p>
+                                <button class="about__show-more button button--flex">
+                                    Show More<i class="uil uil-angle-down button__icon"></i>
+                                </button>
+                                <button class="about__show-less button button--flex">
+                                    Show Less<i class="uil uil-angle-up button__icon"></i>
+                                </button>
+                            </div>
+
                         <div class="about__info">
                             <div>
                                 <span class="about__info-title">01+</span>
@@ -1082,17 +1100,26 @@
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
-        
+
 <!-- Place this code before </body> or in an external JS file -->
 <script>
     const showMoreButton = document.querySelector('.about__show-more');
+    const showLessButton = document.querySelector('.about__show-less');
     const hiddenContent = document.querySelector('.about__hidden');
 
     showMoreButton.addEventListener('click', () => {
         hiddenContent.style.display = 'block';
         showMoreButton.style.display = 'none';
+        showLessButton.style.display = 'block';
+    });
+
+    showLessButton.addEventListener('click', () => {
+        hiddenContent.style.display = 'none';
+        showMoreButton.style.display = 'block';
+        showLessButton.style.display = 'none';
     });
 </script>
+
 
     </body>
 </html>

@@ -457,6 +457,11 @@ img {
 .about__show-more {
   display: block;
 }
+
+.about__show-less {
+  display: none;
+}
+
 /*==================== SKILLS ====================*/
 .skills__container{
   row-gap: 0;
